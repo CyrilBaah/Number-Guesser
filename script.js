@@ -4,11 +4,11 @@
 
   // Write your code below:
 
-  var generateTarget = () => {
+  let generateTarget = () => {
       return Math.floor(Math.random() * 10);
   }
 
-  var compareGuesses = (human, computer, target) => {
+  let compareGuesses = (human, computer, target) => {
       if (getAbsoluteDistance(human, target) < getAbsoluteDistance(computer, target)) {
           return true;
       } else {
@@ -16,11 +16,11 @@
       }
   }
 
-  var getAbsoluteDistance = (number, target) => {
+  let getAbsoluteDistance = (number, target) => {
       return Math.abs(number - target);
   }
 
-  var updateScore = (winner) => {
+  let updateScore = (winner) => {
       if (winner === 'human') {
           humanScore++;
       } else if (winner === 'computer') {
@@ -28,6 +28,6 @@
       }
   }
 
-  var advanceRound = () => {
+  let advanceRound = () => {
       currentRoundNumber++;
   }
